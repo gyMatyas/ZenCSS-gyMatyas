@@ -1,0 +1,308 @@
+body{
+    background-color: black;
+    color: #EBDF00;
+    font-family: STARWARS;
+}
+
+@font-face{
+    font-family:"STARWARS";
+    src:url("sw/STARWARS.eot?") format("eot"),
+    url("sw/STARWARS.woff") format("woff"),
+    url("sw/STARWARS.ttf") format("truetype"),
+    url("sw/STARWARS.svg#STARWARS") format("svg");
+    font-weight:normal;
+    font-style:normal;
+}
+
+div{
+        display: block;
+}
+
+p{
+    line-height: 110%;
+}
+
+div.page-wrapper{
+    text-align: center;
+}
+
+header[role=banner]{
+    margin: 0 auto;
+    max-width: 1048px;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    display: block;
+}
+
+h1{
+    display: inline-block;
+    font-size: 100px;
+    margin: 50px auto 0;
+}
+
+h1::before{
+    margin-top: 75px;
+}
+
+h1::after{
+    margin-top: -20px;
+}
+
+h1::after, h1::before{
+    content: "";
+    background-color: #EBDF00;
+    height: 5px;
+    left: 5%;
+    position: absolute;
+    width: 90%;
+    z-index: -1;
+}
+
+header h2{
+    display: block;
+    text-align: right;
+    max-width: 700px;
+    margin: 10px auto 0;
+    width: 100%
+}
+
+section.intro{
+    float: left;
+    height: 400px;
+    width: 100%;
+}
+
+div.summary{
+    position: relative;
+    max-width: 1048px;
+    margin: 80px auto 0;
+    width: 100%;
+    z-index: 2;
+}
+
+div.summary p{
+    clear: right;
+    float: right;
+    font-style: italic;
+    margin: 0;
+    width: 400px; 
+}
+
+div.preamble {
+    clear: left;
+    float: left;
+    text-align: left;
+    left: 50%;
+    margin-left: -520px;
+    max-width: 490px;
+    position: relative;
+    top: 100px;
+    width: 50%;
+    z-index: 4;
+}
+
+div.supporting{
+    float: left;
+    position: relative;
+    width: 100%;
+    z-index: 3;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+
+section.intro::after{
+    content: "";
+    background-color: #0078F4;
+    height: 5px;
+    left: 1%;
+    position: relative;
+    width: 100%;
+    z-index: -1;
+}
+
+div.explanation{
+    float: left;
+    margin-left: 2%;
+    max-width: 495px;
+    padding-bottom: 15px;
+    position: relative;
+    left: 50%;
+    top: 20px;
+}
+
+div.explanation p{
+    text-align: left;
+}
+.supporting > * {
+    float: left;
+    width: 50%;
+}
+
+div.participation{
+    clear: left;
+    left: 50%;
+    margin-left: -250px;
+    max-width: 495px;
+    position: relative;
+    text-align: left;
+    padding-top: 15px;
+    width: 100%;
+}
+
+
+div.participation h3,
+div.participation p {
+    clear: left;
+    float: left;
+    left: 50%;
+    margin-left: -520px;
+    max-width: 495px;
+    position: relative;
+}
+
+div.participation::after{
+    background: url(sw/noun_32019_cc.svg) 140px center no-repeat;
+    background-size: 350px 400px;
+    clear: right;
+    content: '';
+    display: block;
+    float: left;
+    height: 412px;
+    left: 60%;
+    top: 40px;
+    margin-top: -310px;
+    max-width: 495px;
+    min-width: 412px;
+    position: relative;
+    width: 100%;
+}
+
+.benefits {
+    margin-bottom: 25px;
+    padding: 150px 10% 50px;
+    width: 80%;
+}
+
+.benefits h3,
+.benefits p {
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 20px 0 20px 0;
+    width: 100%;
+}
+
+.benefits::before{
+    content: "";
+    background-color: #EBDF00;
+    height: 5px;
+    left: 5%;
+    position: absolute;
+    width: 90%;
+    z-index: -1;
+}
+
+/*div.requirements::after{
+    background: url(sw/Renegade_Squadron.svg) 140px center no-repeat;
+    background-size: 350px 400px;
+    clear: left;
+    content: '';
+    display: block;
+    float: left;
+    height: 412px;
+    top: 200px;
+    margin-top: -310px;
+    max-width: 495px;
+    min-width: 412px;
+    position: relative;
+    width: 100%;
+}*/
+div.requirements{
+    clear: left;
+    left: 50%;
+    margin-left: -550px;
+    max-width: 495px;
+    min-height: 350px;
+    position: relative;
+}
+
+div.requirements::after {
+    background: url(sw/r2d2.png) 70px center no-repeat;
+    background-size: 400px 400px;
+    clear: right;
+    content: '';
+    display: block;
+    float: right;
+    height: 412px;
+    left: 120%;
+    top: 40px;
+    margin-top: -600px;
+    max-width: 495px;
+    min-width: 412px;
+    position: relative;
+    width: 100%;
+}
+
+div.supporting footer{
+    margin-top: 20px;
+    font-size: 22px;
+    height: 20px;
+    text-align: center;
+    width: 100%;
+    float: inherit;
+}
+
+div.supporting footer::after{
+    content: "";
+    background-color: #740000;
+    height: 5px;
+    left: 1%;
+    position: absolute;
+    width: 98%;
+    z-index: -1;
+    margin-top: 40px;
+}
+
+h3{
+    text-align: center;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: #BF0000;
+    font-style: normal;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+ul{
+    list-style-position: inside;
+    list-style-type: none;
+    -webkit-padding-start: -0px;
+}
+
+ul li:before{
+    content: '';
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background-size: 15px;
+    background-image: url("sw/darth-vader_white.png");
+    background-repeat: no-repeat;
+    margin-right: 0px;
+}
+
+li{
+    line-height: 110%;
+}
